@@ -6,25 +6,37 @@
     <title>Dynamic Background Box</title>
     <link rel="stylesheet" href="styles.css">
     <script>
-        // JavaScript to apply background color based on URL parameter
+        // JavaScript to apply background and box colors based on URL parameters
         window.onload = function() {
             const params = new URLSearchParams(window.location.search);
-            let bgColor = params.get('bgColor');
 
-            // Check and decode the hex color if provided
-            if (bgColor && bgColor.startsWith('%23')) {
-                bgColor = decodeURIComponent(bgColor); // Decodes %23 to #
+            // Function to format hex color if missing #
+            function formatColor(color) {
+                if (color && /^[0-9a-fA-F]{6}$/.test(color)) {
+                    return `#${color}`;
+                }
+                return color;
             }
 
+            // Background color parameter
+            let bgColor = params.get('bgColor');
+            bgColor = formatColor(bgColor);
             if (bgColor) {
                 document.body.style.backgroundColor = bgColor;
+            }
+
+            // Box color parameter
+            let boxColor = params.get('boxColor');
+            boxColor = formatColor(boxColor);
+            if (boxColor) {
+                document.querySelector('.box').style.backgroundColor = boxColor;
             }
         };
     </script>
 </head>
 <body>
     <div class="box">
-        <p>This box has rounded corners, a shadow, and a customizable background.</p>
+        <p>This box has rounded corners, a shadow, and customizable colors for both background and box.</p>
     </div>
 </body>
 </html>
