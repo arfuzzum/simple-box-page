@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full-Screen Box</title>
+    <title>Dynamic Background Box</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        // JavaScript to apply background color based on URL parameter
+        window.onload = function() {
+            const params = new URLSearchParams(window.location.search);
+            const bgColor = params.get('bgColor');
+            if (bgColor) {
+                document.body.style.backgroundColor = bgColor;
+            }
+        };
+    </script>
 </head>
 <body>
     <div class="box">
-        <p>This box now fills the entire browser frame, with rounded corners and a subtle shadow.</p>
+        <p>This box has rounded corners, a shadow, and a customizable background.</p>
     </div>
 </body>
 </html>
