@@ -15,10 +15,10 @@ body, html {
 }
 
 .box {
-    width: 90%; /* Leaves a margin on all sides */
-    height: 90%;
-    max-width: 90vw;
-    max-height: 90vh;
+    width: calc(100% - 40px); /* Leaves a 20px margin on each side */
+    height: calc(100% - 40px); /* Leaves a 20px margin on top and bottom */
+    max-width: calc(100vw - 40px);
+    max-height: calc(100vh - 40px);
     padding: 20px;
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
