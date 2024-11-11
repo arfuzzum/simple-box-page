@@ -2,7 +2,7 @@
 
 The code in this repo has one job: To help you add a scalable box with round corners and a nice shadow to your Tableau dashboards.
 
-<img width="745" alt="image" src="https://github.com/user-attachments/assets/b906101a-5166-4a7a-8ee7-3d81e481a36b">
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/b906101a-5166-4a7a-8ee7-3d81e481a36b">
 
 ## How to make it work
 - Add a webpage element to your dashboard
