@@ -9,7 +9,13 @@
         // JavaScript to apply background color based on URL parameter
         window.onload = function() {
             const params = new URLSearchParams(window.location.search);
-            const bgColor = params.get('bgColor');
+            let bgColor = params.get('bgColor');
+
+            // Check and decode the hex color if provided
+            if (bgColor && bgColor.startsWith('%23')) {
+                bgColor = decodeURIComponent(bgColor); // Decodes %23 to #
+            }
+
             if (bgColor) {
                 document.body.style.backgroundColor = bgColor;
             }
