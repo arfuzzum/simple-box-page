@@ -33,5 +33,5 @@ body, html {
 /* Dark theme for border and shadow */
 .box.dark-theme {
     border: 1px solid #ffffff;
-    box-shadow: 0px clamp(2px, 1vw, 8px) clamp(4px, 2vw, 16px) rgba(255, 255, 255, 0.2);
+    box-shadow: 0px clamp(2px, 1vw, 8px) clamp(4px, 2vw, 16px) rgba(255, 255, 255, 0.3);
 }
