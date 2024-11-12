@@ -23,12 +23,15 @@ body, html {
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
     border-radius: 16px;
-    
-    /* Adaptive shadow */
     box-shadow: 0px clamp(2px, 1vw, 8px) clamp(4px, 2vw, 16px) rgba(0, 0, 0, 0.1);
-    
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+/* Dark theme for border and shadow */
+.box.dark-theme {
+    border: 1px solid #ffffff;
+    box-shadow: 0px clamp(2px, 1vw, 8px) clamp(4px, 2vw, 16px) rgba(255, 255, 255, 0.1);
 }
