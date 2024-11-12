@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Background Box</title>
+    <title>Dynamic Background and Shadow Box</title>
     <link rel="stylesheet" href="styles.css">
     <script>
-        // JavaScript to apply background and box colors based on URL parameters
+        // JavaScript to apply background, box color, and theme based on URL parameters
         window.onload = function() {
             const params = new URLSearchParams(window.location.search);
 
@@ -30,6 +30,12 @@
             boxColor = formatColor(boxColor);
             if (boxColor) {
                 document.querySelector('.box').style.backgroundColor = boxColor;
+            }
+
+            // Dark theme parameter
+            const isDark = params.get('dark') === 'true';
+            if (isDark) {
+                document.querySelector('.box').classList.add('dark-theme');
             }
         };
     </script>
