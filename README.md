@@ -14,7 +14,7 @@ You can set the background color of the webpage by using the 'bgColor' URL param
 https://arfuzzum.github.io/simple-box-page/?bgColor=f5f5f5
 
 If you need to control the box color, use the 'boxColor' parameter:
-- https://arfuzzum.github.io/simple-box-page/?bgColor=f5f5f5&boxColor=FFFFC5
+https://arfuzzum.github.io/simple-box-page/?bgColor=f5f5f5&boxColor=FFFFC5
 
 The corner radius and shadow size cannot be changed.
 
