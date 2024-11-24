@@ -18,4 +18,4 @@ If you need to control the box color, use the 'boxColor' parameter:
 
 The corner radius and shadow size cannot be changed.
 
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/b906101a-5166-4a7a-8ee7-3d81e481a36b">
+<img width="500" alt="screenshot of shadow box in tableau dashboard" src="https://github.com/user-attachments/assets/579a9f67-3384-4982-96a2-9b0c6b647861">
