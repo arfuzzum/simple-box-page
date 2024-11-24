@@ -8,10 +8,12 @@ The code in this repo has one job: To help you add a scalable box with round cor
 3. Set the X and Y size and position of the webpage element
 4. Add the sheet containing your report or visualisation
 5. Set the X and Y size and position to the same as your webpage element
-6. Set the outer padding to 40px for all sides, which a) nullifies the 20px box margin added to show the shadow and b) adds 20px more for a nice airy feel to your box component.
+6. Set the outer padding to 48px for all sides, which a) nullifies the 24px box margin added to show the shadow and b) adds 24px more for a nice airy feel to your box component.
 
-If your background colors are anything but white you can set the background color of both the webpage and the box by using URL parameters. 'bgColor' controls the page background color, while 'boxColor' controls the box background color.
-- https://arfuzzum.github.io/simple-box-page/?bgColor=f5f5f5
+You can set the background color of the webpage by using the 'bgColor' URL parameter:
+https://arfuzzum.github.io/simple-box-page/?bgColor=f5f5f5
+
+If you need to control the box color, use the 'boxColor' parameter:
 - https://arfuzzum.github.io/simple-box-page/?bgColor=f5f5f5&boxColor=FFFFC5
 
 The corner radius and shadow size cannot be changed.
